@@ -201,22 +201,20 @@ header nav.right a.btn {
 section.top div.cta {
   height: 512px;
   background: url(/images/vegetables.jpg);
+  padding-left: 16rem;
 }
 section.top div.cta h2 {
-  margin-left: 16rem;
   padding-top: 9.6rem;
   font-size: 5rem;
   color: white;
 }
 section.top div.cta h3 {
   font-size: 2.3rem;
-  margin-left: 16rem;
   padding-top: 1.3rem;
   color: white;
 }
 section.top div.cta div.btn {
   padding-top: 6.1rem;
-  margin-left: 16rem;
 }
 section.top div.cta div.btn a.btn {
   background-color: #79ac49;
@@ -302,6 +300,7 @@ section.middle div.description_2 div.screen_with_logo h3 {
 section.middle div.description_2 div.screen_with_logo img {
   margin-top: -0.2rem;
   margin-left: -3rem;
+  margin-bottom: 4rem;
 }
 section.middle div.description_2 div.text {
   margin-left: 2.1rem;
@@ -320,13 +319,16 @@ section.middle div.description_2 div.text p {
   line-height: 1.8;
   padding-right: 30rem;
 }
-.big_heading {
+section.bottom div.big_heading {
+  height: 16rem;
   background-color: #00a7b6;
-  width: 100%;
-  height: 10rem;
-  color: white;
-  text-align: center;
-  padding-top: 4.5rem;
+  padding-left: 24.2rem;
+  padding-top: 6.6rem;
+}
+section.bottom div.big_heading h4 {
+  color: #e6f5f7;
+  font-size: 3.5rem;
+  font-family: "Roboto", sans-serif;
 }
 .cta {
   position: relative;
