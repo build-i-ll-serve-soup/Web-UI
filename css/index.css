@@ -163,7 +163,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 2.5rem 0 1.7rem 0;
+  padding: 2.5rem 11% 1.7rem 11.1%;
   width: 100%;
   margin: 0 auto;
 }
@@ -174,7 +174,6 @@ header a {
 }
 header nav.left {
   display: flex;
-  margin-left: 11.1%;
   align-items: center;
 }
 header nav.left span.middle_dot {
@@ -184,9 +183,6 @@ header h1 a {
   color: #7cb342;
   font-size: 2.3rem;
   margin-left: -1.7%;
-}
-header nav.right {
-  margin-right: 11%;
 }
 header nav.right a:first-child {
   padding-right: 1.3rem;
@@ -201,7 +197,11 @@ header nav.right a.btn {
 section.top div.cta {
   height: 512px;
   background: url(/images/vegetables.jpg);
-  padding-left: 16rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  padding-left: 11.11%;
 }
 section.top div.cta h2 {
   padding-top: 9.6rem;
@@ -226,7 +226,7 @@ section.top div.cta div.btn a.btn {
 }
 section.top div.description {
   display: flex;
-  margin-left: 16rem;
+  margin-left: 10.4%;
   margin-top: -15.3rem;
   text-align: left;
   height: 25rem;
@@ -234,7 +234,7 @@ section.top div.description {
   background-color: white;
   border: black 2px;
   position: absolute;
-  width: 1120px;
+  width: 72.08%;
   border: 1px solid #ddd;
   border-radius: 6px;
 }
@@ -255,11 +255,11 @@ section.top div.description div.text p {
 }
 section.middle div.description_1 {
   display: flex;
+  padding-left: 18.9%;
 }
 section.middle div.description_1 div.text {
-  margin-left: 27.2rem;
   padding-top: 22.6rem;
-  width: 22.4%;
+  width: 28%;
 }
 section.middle div.description_1 div.text h1 {
   font-size: 3.7rem;
@@ -270,9 +270,9 @@ section.middle div.description_1 div.text p {
   line-height: 1.5;
 }
 section.middle div.description_1 div.overlaid_screens {
-  width: 50%;
-  padding-left: 5.9rem;
-  padding-top: 14rem;
+  width: 72%;
+  padding-top: 12%;
+  padding-left: 4.7%;
 }
 section.middle div.description_2 {
   display: flex;
