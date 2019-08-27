@@ -126,13 +126,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
-  height: 100%;
   font-family: "Roboto", sans-serif;
 }
 h1,
@@ -142,10 +143,93 @@ h4,
 h5 {
   font-family: "Rockwell", serif;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .container-main {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2.5rem 0 1.7rem 0;
+  width: 100%;
+  margin: 0 auto;
+}
+header a {
+  text-decoration: none;
+  color: #666;
+  font-size: 1.5rem;
+}
+header nav.left {
+  display: flex;
+  margin-left: 11.1%;
+  align-items: center;
+}
+header nav.left span.middle_dot {
+  margin: 0 0.9rem;
+}
+header h1 a {
+  color: #7cb342;
+  font-size: 2.3rem;
+  margin-left: -1.7%;
+}
+header nav.right {
+  margin-right: 11%;
+}
+header nav.right a:first-child {
+  padding-right: 1.3rem;
+}
+header nav.right a.btn {
+  border: 1px #79ac49 solid;
+  color: #79ac49;
+  padding: 1rem 1.8rem;
+  border-radius: 6px;
+  font-weight: 300;
+}
+section.top div.cta {
+  height: 512px;
+  background: url(/images/vegetables.jpg);
+}
+section.top div.cta h2 {
+  margin-left: 16rem;
+  padding-top: 9.6rem;
+  font-size: 5rem;
+}
+section.top div.cta h3 {
+  font-size: 2.3rem;
+  margin-left: 16rem;
+  padding-top: 1.3rem;
+}
+section.top div.cta div.btn {
+  padding-top: 6.1rem;
+  margin-left: 16rem;
+}
+section.top div.cta div.btn a.btn {
+  border: 1px #79ac49 solid;
+  background-color: #79ac49;
+  color: white;
+  padding: 1.1rem 3.5rem;
+  border-radius: 6px;
+  font-weight: 400;
+  text-decoration: none;
+}
+section.top div.description {
+  display: flex;
+  text-align: left;
+  position: absolute;
+  height: 15rem;
+  bottom: -1rem;
+  left: 15%;
+  width: 70%;
+  font-size: 1.2rem;
+  color: #000;
+  background-color: white;
+  border: black 2px;
 }
 .right button {
   background: white;
@@ -174,23 +258,6 @@ h5 {
   position: relative;
   color: white;
   font-size: 2rem;
-}
-img {
-  width: 100%;
-  height: 25rem;
-}
-.bottom-center {
-  display: flex;
-  text-align: left;
-  position: absolute;
-  height: 5rem;
-  bottom: -1rem;
-  left: 15%;
-  width: 70%;
-  font-size: 1.2rem;
-  color: #000;
-  background-color: white;
-  border: black 2px;
 }
 .header_description {
   width: 30%;
@@ -337,47 +404,4 @@ footer div.bottom {
   background-color: #e6f7fa;
   padding: 2rem 0rem;
   font-size: 0.8rem;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 2.5rem 0 1.7rem 0;
-  width: 100%;
-  margin: 0 auto;
-}
-header a {
-  text-decoration: none;
-  color: #666;
-  font-size: 1.5rem;
-}
-header nav.left {
-  display: flex;
-  margin-left: 11.1%;
-  align-items: center;
-}
-header nav.left span.middle_dot {
-  margin: 0 0.9rem;
-}
-header h1 a {
-  color: #7cb342;
-  font-size: 2.3rem;
-  margin-left: -1.7%;
-}
-header nav.right {
-  margin-right: 11%;
-}
-header nav.right a:first-child {
-  padding-right: 1.3rem;
-}
-header nav.right a.btn {
-  border: 1px #79ac49 solid;
-  color: #79ac49;
-  padding: 1rem 1.8rem;
-  border-radius: 6px;
-  font-weight: 300;
-}
-section.top div.cta {
-  height: 512px;
-  background: url(/img/bowls.jpg);
 }
