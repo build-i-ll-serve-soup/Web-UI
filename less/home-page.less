@@ -67,13 +67,13 @@ section.top {
 }
 
 section.middle {
-  div.description {
+  div.description_1 {
     display: flex;
 
     div.text {
       margin-left: 27.2rem;
       padding-top: 22.6rem;
-      width: 32.2rem;
+      width: 22.4%;
 
       h1 {
         font-size: 3.7rem;
@@ -86,40 +86,64 @@ section.middle {
       }
     }
 
-    div.img {
+    div.overlaid_screens {
       width: 50%;
       padding-left: 5.9rem;
       padding-top: 14rem;
     }
   }
-}
+  div.description_2 {
+    display: flex;
+    justify-content: space-around;
 
-.overlaid_screens {
-  width: 50%;
-  height: 10%;
-  margin-top: 4rem;
-}
+    div.screen_with_logo {
+      display: flex;
+      flex-direction: column;
+      margin-left: 27.2rem;
+      width: 84.5%;
 
-h4 {
-  font-size: 1.5rem;
-}
+      h4 {
+        font-size: 2rem;
+        margin-top: -3.2rem;
+      }
 
-.subhead {
-  color: #7cb342;
-}
+      span.subhead {
+        color: #7cb342;
+        font-size: 1.2rem;
+        padding-top: 1.6rem;
+      }
 
-h3 {
-  font-size: 3rem;
-}
+      h3 {
+        padding-top: 2rem;
+        font-size: 4.5rem;
+      }
 
-.description_2 {
-  display: flex;
-}
+      img {
+        margin-top: -0.2rem;
+        margin-left: -3rem;
+      }
+    }
 
-.screen_with_logo {
-  width: 50%;
-  height: 10%;
-  margin-top: 4rem;
+    div.text {
+      margin-left: 2.1rem;
+      padding-top: 11.8rem;
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        font-size: 3.3rem;
+        padding-right: 30rem;
+        line-height: 1.3;
+      }
+
+      p {
+        padding-top: 0.9rem;
+        font-size: 1.5rem;
+        line-height: 1.8;
+        padding-right: 30rem;
+      }
+    }
+  }
 }
 
 .big_heading {
