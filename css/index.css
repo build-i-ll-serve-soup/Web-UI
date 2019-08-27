@@ -1,0 +1,338 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.container-home {
+  max-width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+}
+header .left {
+  display: flex;
+  margin-right: 5rem;
+}
+header .left a {
+  text-decoration: none;
+  margin: 3rem 1rem;
+  color: gray;
+}
+header h1 {
+  display: flex;
+}
+header h1 a {
+  text-decoration: none;
+  margin-top: 3rem;
+  color: #7CB342;
+  font-size: 1.5rem;
+}
+header .right {
+  display: flex;
+  margin-left: 5rem;
+}
+header .right a {
+  text-decoration: none;
+  margin: 3rem 1rem;
+  color: gray;
+}
+.right button {
+  background: white;
+  vertical-align: top;
+  margin: 2rem;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.container button {
+  background: lightgreen;
+  vertical-align: top;
+  margin: 1rem;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.container button a {
+  text-decoration: none;
+  margin: 3rem 1rem;
+  color: white;
+}
+.container {
+  position: relative;
+  color: white;
+  font-size: 2rem;
+}
+img {
+  width: 100%;
+  height: 25rem;
+}
+.bottom-center {
+  display: flex;
+  text-align: left;
+  position: absolute;
+  height: 3rem;
+  bottom: -1rem;
+  left: 15%;
+  width: 70%;
+  font-size: 1.2rem;
+  color: #000;
+  background-color: white;
+  border: black 2px;
+}
+.header_description {
+  width: 30%;
+  height: 7rem;
+}
+.top-left {
+  position: absolute;
+  text-align: left;
+  top: 30px;
+  left: 30px;
+}
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.middle {
+  margin-top: 0.5rem;
+  margin-left: 7rem;
+  padding-top: 39px;
+  width: 80%;
+}
+.description_1 {
+  display: flex;
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+}
+.description_1 .description_1-text {
+  width: 50%;
+  height: 10rem;
+  margin-top: 8rem;
+  padding: 1rem;
+}
+.description_1 h1 {
+  font-size: 2rem;
+}
+.overlaid_screens {
+  width: 50%;
+  height: 10%;
+  margin-top: 4rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+.subhead {
+  color: #7CB342;
+}
+h3 {
+  font-size: 3rem;
+}
+.description_2 {
+  display: flex;
+}
+.description {
+  width: 50%;
+  height: 10rem;
+  margin-top: 8rem;
+  padding: 1rem;
+}
+.description h4 {
+  font-size: 2rem;
+}
+.screen_with_logo {
+  width: 50%;
+  height: 10%;
+  margin-top: 4rem;
+}
+.big_heading {
+  background-color: #00A7B6;
+  width: 100%;
+  height: 10rem;
+  color: white;
+  text-align: center;
+  padding-top: 4.5rem;
+}
+.cta {
+  position: relative;
+  color: white;
+  font-size: 2rem;
+}
+.top-left {
+  position: absolute;
+  text-align: left;
+  top: 30px;
+  left: 30px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cta button {
+  background: lightgreen;
+  vertical-align: top;
+  margin: 1rem;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.cta button a {
+  text-decoration: none;
+  margin: 3rem 1rem;
+  color: white;
+}
