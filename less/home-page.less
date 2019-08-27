@@ -7,12 +7,14 @@ section.top {
       margin-left: 16rem;
       padding-top: 9.6rem;
       font-size: 5rem;
+      color: white;
     }
 
     h3 {
       font-size: 2.3rem;
       margin-left: 16rem;
       padding-top: 1.3rem;
+      color: white;
     }
 
     div.btn {
@@ -20,10 +22,9 @@ section.top {
       margin-left: 16rem;
 
       a.btn {
-        border: 1px #79ac49 solid;
-        background-color: #79ac49;
-        color: white;
-        padding: 1.1rem 3.5rem;
+        background-color: @button-cta-background-color;
+        color: @button-cta-color;
+        padding: 1.2rem 3.8rem;
         border-radius: 6px;
         font-weight: 400;
         text-decoration: none;
@@ -33,102 +34,63 @@ section.top {
 
   div.description {
     display: flex;
+    margin-left: 16rem;
+    margin-top: -15.3rem;
     text-align: left;
-    position: absolute;
-    height: 15rem;
-    bottom: -1rem;
-    left: 15%;
-    width: 70%;
+    height: 25rem;
     font-size: 1.2rem;
-    color: #000;
     background-color: white;
     border: black 2px;
+    position: absolute;
+    width: 1120px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    div.text {
+      display: flex;
+      flex-direction: column;
+      margin-left: 6.7rem;
+      padding-top: 6.4rem;
+
+      h3 {
+        font-size: 2.3rem;
+      }
+
+      p {
+        padding-top: 1.8rem;
+        font-size: 1.5rem;
+        line-height: 2;
+        padding-right: 11rem;
+      }
+    }
   }
 }
 
-.right button {
-  background: white;
-  vertical-align: top;
-  margin: 2rem;
-  padding: 8px 44px;
-  font-size: 17px;
-  border: 1px solid black;
-  cursor: pointer;
-}
+section.middle {
+  div.description {
+    display: flex;
 
-.container button {
-  background: lightgreen;
-  vertical-align: top;
-  margin: 1rem;
-  padding: 8px 44px;
-  font-size: 17px;
-  border: 1px solid black;
-  cursor: pointer;
+    div.text {
+      margin-left: 27.2rem;
+      padding-top: 22.6rem;
+      width: 32.2rem;
 
-  a {
-    text-decoration: none;
-    margin: 3rem 1rem;
-    color: white;
-  }
-}
+      h1 {
+        font-size: 3.7rem;
+      }
 
-.container {
-  position: relative;
-  color: white;
-  font-size: 2rem;
-}
+      p {
+        padding-top: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 1.5;
+      }
+    }
 
-.header_description {
-  width: 30%;
-  height: 7rem;
-}
-.top-left {
-  position: absolute;
-  text-align: left;
-  top: 30px;
-  left: 30px;
-}
-
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.middle {
-  margin-top: 0.5rem;
-  margin-left: 7rem;
-  padding-top: 39px;
-  width: 80%;
-}
-
-.description_1 {
-  display: flex;
-  margin-top: 1rem;
-  padding: 0 0.5rem;
-
-  .description_1-text {
-    width: 50%;
-    height: 10rem;
-    margin-top: 8rem;
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
+    div.img {
+      width: 50%;
+      padding-left: 5.9rem;
+      padding-top: 14rem;
+    }
   }
 }
 
@@ -152,17 +114,6 @@ h3 {
 
 .description_2 {
   display: flex;
-}
-
-.description {
-  width: 50%;
-  height: 10rem;
-  margin-top: 8rem;
-  padding: 1rem;
-
-  h4 {
-    font-size: 2rem;
-  }
 }
 
 .screen_with_logo {
