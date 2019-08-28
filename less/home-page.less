@@ -19,7 +19,6 @@ section.top {
 
     h3 {
       font-size: 2.3rem;
-
       padding-top: 1.3rem;
       color: white;
     }
@@ -30,10 +29,11 @@ section.top {
       a.btn {
         background-color: @button-cta-background-color;
         color: @button-cta-color;
-        padding: 1.2rem 3.8rem;
+        padding: 1.2rem 4rem;
         border-radius: 6px;
         font-weight: 400;
         text-decoration: none;
+        font-size: 1.7rem;
       }
     }
   }
@@ -103,6 +103,7 @@ section.middle {
     display: flex;
     padding-left: 18.9%;
     padding-right: 18.9%;
+    margin-bottom: 2.7%;
 
     div.screen_with_logo_block {
       display: flex;
@@ -128,7 +129,6 @@ section.middle {
       div.screen_with_logo {
         margin-top: -0.2rem;
         margin-left: -3rem;
-        margin-bottom: 4rem;
       }
     }
 
@@ -155,52 +155,51 @@ section.middle {
 
 section.bottom {
   div.big_heading {
+    display: flex;
+    align-items: center;
+    padding: 0 16.67%;
     height: 16rem;
     background-color: #00a7b6;
-    padding-left: 24.2rem;
-    padding-top: 6.6rem;
-
-    h4 {
-      color: #e6f5f7;
-      font-size: 3.5rem;
-      font-family: "Roboto", sans-serif;
-    }
+    color: #e6f5f7;
+    font-size: 3.5rem;
+    font-family: "Roboto", sans-serif;
   }
-}
 
-.cta {
-  position: relative;
-  color: white;
-  font-size: 2rem;
-}
+  div.cta {
+    height: 352px;
+    background: url(/images/bowls.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    padding-left: 16.67%;
+    padding-right: 16.67%;
 
-.top-left {
-  position: absolute;
-  text-align: left;
-  top: 30px;
-  left: 30px;
-}
+    h2 {
+      padding-top: 8.6rem;
+      font-size: 5.5rem;
+      color: white;
+    }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+    h3 {
+      font-size: 2.1rem;
+      padding-top: 1.6rem;
+      color: white;
+    }
 
-.cta button {
-  background: lightgreen;
-  vertical-align: top;
-  margin: 1rem;
-  padding: 8px 44px;
-  font-size: 17px;
-  border: 1px solid black;
-  cursor: pointer;
+    div.btn {
+      padding-top: 5.4rem;
 
-  a {
-    text-decoration: none;
-    margin: 3rem 1rem;
-    color: white;
+      a.btn {
+        background-color: @button-cta-background-color;
+        color: @button-cta-color;
+        padding: 1.2rem 4rem;
+        border-radius: 6px;
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 1.7rem;
+      }
+    }
   }
 }
 
