@@ -238,6 +238,12 @@ section.bottom {
 }
 
 footer {
+  color: @font-color;
+
+  a {
+    color: @font-color;
+  }
+
   div.top {
     @media @mobile {
       flex-direction: column;
@@ -264,7 +270,6 @@ footer {
 
       a {
         text-decoration: none;
-        color: gray;
         padding-bottom: 0.7rem;
       }
     }
@@ -311,10 +316,13 @@ footer {
       padding-right: 8%;
     }
 
+    padding: 0 11.2%;
+    height: 5.7rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: #e6f7fa;
-    padding: 2rem 0rem;
-    font-size: 0.8rem;
+    border-top: 1px solid #8fe4ee;
+    font-size: 1.4rem;
   }
 }

@@ -450,6 +450,12 @@ section.bottom div.cta div.btn a.btn {
   text-decoration: none;
   font-size: 2rem;
 }
+footer {
+  color: #666;
+}
+footer a {
+  color: #666;
+}
 footer div.top {
   display: flex;
   justify-content: center;
@@ -478,7 +484,6 @@ footer div.top div {
 }
 footer div.top div a {
   text-decoration: none;
-  color: gray;
   padding-bottom: 0.7rem;
 }
 footer div.top div:first-child {
@@ -511,11 +516,14 @@ footer div.top div:not(:first-child) a {
   padding-left: 1rem;
 }
 footer div.bottom {
+  padding: 0 11.2%;
+  height: 5.7rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: #e6f7fa;
-  padding: 2rem 0rem;
-  font-size: 0.8rem;
+  border-top: 1px solid #8fe4ee;
+  font-size: 1.4rem;
 }
 @media (max-width: 500px) {
   footer div.bottom {
