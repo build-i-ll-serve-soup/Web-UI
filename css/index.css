@@ -226,7 +226,7 @@ section.top div.cta div.btn a.btn {
   border-radius: 6px;
   font-weight: 400;
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 section.top div.description {
   display: flex;
@@ -323,6 +323,9 @@ section.middle div.description_2 div.text p {
   font-size: 1.5rem;
   line-height: 1.8;
 }
+section.bottom {
+  margin-bottom: 5.6rem;
+}
 section.bottom div.big_heading {
   display: flex;
   align-items: center;
@@ -359,22 +362,24 @@ section.bottom div.cta div.btn {
 section.bottom div.cta div.btn a.btn {
   background-color: #79ac49;
   color: white;
-  padding: 1.2rem 4rem;
+  padding: 1.2rem 3.4rem;
   border-radius: 6px;
   font-weight: 400;
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 footer div.top {
   display: flex;
   justify-content: space-around;
   background-color: #f4f9ed;
+  height: 31.8rem;
+  padding-left: 7%;
+  padding-top: 8.8rem;
 }
 footer div.top div {
   display: flex;
   flex-direction: column;
   border-left: 1px solid gray;
-  padding: 3rem;
 }
 footer div.top div h2 {
   color: #7cb342;
@@ -390,7 +395,7 @@ footer div.top div:first-child {
 }
 footer div.bottom {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #e6f7fa;
   padding: 2rem 0rem;
   font-size: 0.8rem;
