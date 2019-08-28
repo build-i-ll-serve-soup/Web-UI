@@ -163,6 +163,7 @@ section.middle {
     div.text {
       @media @mobile {
         width: 100%;
+        padding-top: 3rem;
       }
 
       padding-top: 11.8rem;
@@ -275,18 +276,32 @@ footer {
     }
 
     div:first-child {
+      @media @mobile {
+        padding: 0 25% 3rem 25%;
+        width: 100%;
+        text-align: left;
+      }
+
       border: 0;
       width: 29.4rem;
       text-align: center;
       padding-top: 4.8rem;
 
       h2 {
+        @media @mobile {
+          padding-bottom: 0.3rem;
+        }
+
         color: #7cb342;
         padding-bottom: 1rem;
         font-size: 2.9rem;
       }
 
       a {
+        @media @mobile {
+          padding-top: 0;
+        }
+
         padding-bottom: 0.7rem;
         font-size: 1.4rem;
         padding-top: 0.3rem;
@@ -294,6 +309,12 @@ footer {
     }
 
     div:not(:first-child) {
+      @media @mobile {
+        padding: 0 25% 2rem 25%;
+        width: 100%;
+        text-align: left;
+      }
+
       padding-left: 2.3rem;
       padding-top: 3.3rem;
 
@@ -312,8 +333,9 @@ footer {
 
   div.bottom {
     @media @mobile {
-      padding-left: 8%;
-      padding-right: 8%;
+      padding-left: 5%;
+      padding-right: 5%;
+      font-size: 1.2rem;
     }
 
     padding: 0 11.2%;

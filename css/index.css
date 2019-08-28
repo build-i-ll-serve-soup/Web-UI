@@ -187,6 +187,8 @@ header nav.left {
   header nav.left {
     order: 2;
     padding-top: 0.7rem;
+    justify-content: center;
+    width: 100%;
   }
 }
 header nav.left span.middle_dot {
@@ -208,6 +210,9 @@ header nav.right {
   header nav.right {
     order: 3;
     padding-top: 0.7rem;
+    justify-content: center;
+    width: 100%;
+    display: flex;
   }
 }
 header nav.right span.middle_dot {
@@ -215,11 +220,17 @@ header nav.right span.middle_dot {
 }
 @media (max-width: 500px) {
   header nav.right span.middle_dot {
-    display: inline;
+    display: inline-block;
+    margin: 0 0.9rem;
   }
 }
 header nav.right a:first-child {
   padding-right: 1.3rem;
+}
+@media (max-width: 500px) {
+  header nav.right a:first-child {
+    padding-right: 0;
+  }
 }
 header nav.right a.btn {
   border: 1px #79ac49 solid;
@@ -233,6 +244,7 @@ header nav.right a.btn {
     border: 0;
     color: #666;
     font-weight: 400;
+    padding: 0;
   }
 }
 section.top div.cta {
@@ -394,6 +406,7 @@ section.middle div.description_2 div.text {
 @media (max-width: 500px) {
   section.middle div.description_2 div.text {
     width: 100%;
+    padding-top: 3rem;
   }
 }
 section.middle div.description_2 div.text h4 {
@@ -492,19 +505,43 @@ footer div.top div:first-child {
   text-align: center;
   padding-top: 4.8rem;
 }
+@media (max-width: 500px) {
+  footer div.top div:first-child {
+    padding: 0 25% 3rem 25%;
+    width: 100%;
+    text-align: left;
+  }
+}
 footer div.top div:first-child h2 {
   color: #7cb342;
   padding-bottom: 1rem;
   font-size: 2.9rem;
+}
+@media (max-width: 500px) {
+  footer div.top div:first-child h2 {
+    padding-bottom: 0.3rem;
+  }
 }
 footer div.top div:first-child a {
   padding-bottom: 0.7rem;
   font-size: 1.4rem;
   padding-top: 0.3rem;
 }
+@media (max-width: 500px) {
+  footer div.top div:first-child a {
+    padding-top: 0;
+  }
+}
 footer div.top div:not(:first-child) {
   padding-left: 2.3rem;
   padding-top: 3.3rem;
+}
+@media (max-width: 500px) {
+  footer div.top div:not(:first-child) {
+    padding: 0 25% 2rem 25%;
+    width: 100%;
+    text-align: left;
+  }
 }
 footer div.top div:not(:first-child) h2 {
   color: #7cb342;
@@ -527,8 +564,9 @@ footer div.bottom {
 }
 @media (max-width: 500px) {
   footer div.bottom {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.2rem;
   }
 }
 h5 {

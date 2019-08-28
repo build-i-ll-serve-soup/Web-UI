@@ -21,6 +21,8 @@ header {
     @media @mobile {
       order: 2;
       padding-top: 0.7rem;
+      justify-content: center;
+      width: 100%;
     }
 
     display: flex;
@@ -45,19 +47,27 @@ header {
     @media @mobile {
       order: 3;
       padding-top: 0.7rem;
+      justify-content: center;
+      width: 100%;
+      display: flex;
     }
 
     width: 18rem;
 
     span.middle_dot {
       @media @mobile {
-        display: inline;
+        display: inline-block;
+        margin: 0 0.9rem;
       }
 
       display: none;
     }
 
     a:first-child {
+      @media @mobile {
+        padding-right: 0;
+      }
+
       padding-right: 1.3rem;
     }
 
@@ -66,6 +76,7 @@ header {
         border: 0;
         color: @font-color;
         font-weight: 400;
+        padding: 0;
       }
 
       border: 1px #79ac49 solid;
