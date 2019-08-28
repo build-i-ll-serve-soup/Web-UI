@@ -1,3 +1,7 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 html,
 body,
 div,
@@ -122,15 +126,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
-  height: 100%;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
 }
 h1,
 h2,
@@ -138,218 +142,244 @@ h3,
 h4,
 h5 {
   font-family: "Rockwell", serif;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
+  color: #666;
 }
-.container-home {
+p {
+  color: #666;
+}
+img {
   max-width: 100%;
+  height: auto;
 }
-header {
-  display: flex;
-  justify-content: space-evenly;
+span.bold {
+  font-weight: 700;
 }
-header .left {
-  display: flex;
-  margin-right: 5rem;
-}
-header .left a {
-  text-decoration: none;
-  margin: 3rem 1rem;
-  color: gray;
-}
-header h1 {
-  display: flex;
-}
-header h1 a {
-  text-decoration: none;
-  margin-top: 3rem;
-  color: #7cb342;
-  font-size: 1.5rem;
-}
-header .right {
-  display: flex;
-  margin-left: 5rem;
-}
-header .right a {
-  text-decoration: none;
-  margin: 3rem 1rem;
-  color: gray;
-}
-.right button {
-  background: white;
-  vertical-align: top;
-  margin: 2rem;
-  padding: 8px 44px;
-  font-size: 17px;
-  border: 1px solid black;
-  cursor: pointer;
-}
-.container button {
-  background: lightgreen;
-  vertical-align: top;
-  margin: 1rem;
-  padding: 8px 44px;
-  font-size: 17px;
-  border: 1px solid black;
-  cursor: pointer;
-}
-.container button a {
-  text-decoration: none;
-  margin: 3rem 1rem;
-  color: white;
-}
-.container {
-  position: relative;
-  color: white;
-  font-size: 2rem;
+.container-main {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
 }
-img {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2.5rem 11% 1.7rem 11.1%;
   width: 100%;
-  height: 25rem;
+  margin: 0 auto;
 }
-.bottom-center {
-  display: flex;
-  text-align: left;
-  position: absolute;
-  height: 5rem;
-  bottom: -1rem;
-  left: 15%;
-  width: 70%;
-  font-size: 1.2rem;
-  color: #000;
-  background-color: white;
-  border: black 2px;
-}
-.header_description {
-  width: 30%;
-  height: 7rem;
-}
-.top-left {
-  position: absolute;
-  text-align: left;
-  top: 30px;
-  left: 30px;
-}
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.middle {
-  margin-top: 0.5rem;
-  margin-left: 7rem;
-  padding-top: 39px;
-  width: 80%;
-}
-.description_1 {
-  display: flex;
-  margin-top: 1rem;
-  padding: 0 0.5rem;
-}
-.description_1 .description_1-text {
-  width: 50%;
-  height: 10rem;
-  margin-top: 8rem;
-  padding: 1rem;
-}
-.description_1 h1 {
-  font-size: 2rem;
-}
-.overlaid_screens {
-  width: 50%;
-  height: 10%;
-  margin-top: 4rem;
-}
-h4 {
+header a {
+  text-decoration: none;
+  color: #666;
   font-size: 1.5rem;
 }
-.subhead {
-  color: #7cb342;
-}
-h3 {
-  font-size: 3rem;
-}
-.description_2 {
+header nav.left {
   display: flex;
+  align-items: center;
 }
-.description {
-  width: 50%;
-  height: 10rem;
-  margin-top: 8rem;
-  padding: 1rem;
+header nav.left span.middle_dot {
+  margin: 0 0.9rem;
 }
-.description h4 {
-  font-size: 2rem;
+header h1 a {
+  color: #7cb342;
+  font-size: 2.3rem;
+  margin-left: -1.7%;
 }
-.screen_with_logo {
-  width: 50%;
-  height: 10%;
-  margin-top: 4rem;
+header nav.right a:first-child {
+  padding-right: 1.3rem;
 }
-.big_heading {
-  background-color: #00a7b6;
+header nav.right a.btn {
+  border: 1px #79ac49 solid;
+  color: #79ac49;
+  padding: 1rem 1.8rem;
+  border-radius: 6px;
+  font-weight: 300;
+}
+section.top div.cta {
+  height: 512px;
+  background: url(/images/vegetables.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   width: 100%;
-  height: 10rem;
-  color: white;
-  text-align: center;
-  padding-top: 4.5rem;
-}
-.cta {
+  padding-left: 11.11%;
+  padding-right: 11.11%;
   position: relative;
+  z-index: -1;
+}
+section.top div.cta h2 {
+  padding-top: 9.6rem;
+  font-size: 5rem;
   color: white;
-  font-size: 2rem;
-  max-width: 1440px;
 }
-.top-left {
-  position: absolute;
-  text-align: left;
-  top: 30px;
-  left: 30px;
+section.top div.cta h3 {
+  font-size: 2.3rem;
+  padding-top: 1.3rem;
+  color: white;
 }
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+section.top div.cta div.btn {
+  padding-top: 6.1rem;
 }
-.cta button {
-  background: lightgreen;
-  vertical-align: top;
-  margin: 1rem;
-  padding: 8px 44px;
-  font-size: 17px;
-  border: 1px solid black;
-  cursor: pointer;
-}
-.cta button a {
+section.top div.cta div.btn a.btn {
+  background-color: #79ac49;
+  color: white;
+  padding: 1.2rem 4rem;
+  border-radius: 6px;
+  font-weight: 400;
   text-decoration: none;
-  margin: 3rem 1rem;
+  font-size: 2rem;
+}
+section.top div.description {
+  display: flex;
+  margin-left: 11.11%;
+  margin-right: 11.11%;
+  margin-top: -15.3rem;
+  text-align: left;
+  height: 25rem;
+  font-size: 1.2rem;
+  background-color: white;
+  width: 77.78%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  position: relative;
+  z-index: 0;
+}
+section.top div.description div.text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6.7rem;
+  padding-top: 6.4rem;
+}
+section.top div.description div.text h3 {
+  font-size: 2.3rem;
+}
+section.top div.description div.text p {
+  padding-top: 1.8rem;
+  font-size: 1.5rem;
+  line-height: 2;
+  padding-right: 11rem;
+}
+section.middle div.description_1 {
+  display: flex;
+  padding: 0 15.9% 0 18.9%;
+}
+section.middle div.description_1 div.text {
+  padding-top: 13.6%;
+  width: 35%;
+}
+section.middle div.description_1 div.text h1 {
+  font-size: 3.7rem;
+}
+section.middle div.description_1 div.text p {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+section.middle div.description_1 div.overlaid_screens {
+  width: 65%;
+  padding-top: 4.7%;
+  padding-left: 5.5%;
+}
+section.middle div.description_2 {
+  display: flex;
+  padding-left: 18.9%;
+  padding-right: 18.9%;
+  margin-bottom: 2.7%;
+}
+section.middle div.description_2 div.screen_with_logo_block {
+  display: flex;
+  flex-direction: column;
+  width: 59%;
+}
+section.middle div.description_2 div.screen_with_logo_block h4 {
+  font-size: 2rem;
+  margin-top: -3.2rem;
+}
+section.middle div.description_2 div.screen_with_logo_block span.subhead {
+  color: #7cb342;
+  font-size: 1.2rem;
+  padding-top: 1.6rem;
+}
+section.middle div.description_2 div.screen_with_logo_block h3 {
+  padding-top: 2rem;
+  font-size: 4.5rem;
+}
+section.middle div.description_2 div.screen_with_logo_block div.screen_with_logo {
+  margin-top: -0.2rem;
+  margin-left: -3rem;
+}
+section.middle div.description_2 div.text {
+  padding-top: 11.8rem;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 39%;
+}
+section.middle div.description_2 div.text h4 {
+  font-size: 3.3rem;
+  line-height: 1.3;
+}
+section.middle div.description_2 div.text p {
+  padding-top: 0.9rem;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+section.bottom {
+  margin-bottom: 5.6rem;
+}
+section.bottom div.big_heading {
+  display: flex;
+  align-items: center;
+  padding: 0 16.67%;
+  height: 16rem;
+  background-color: #00a7b6;
+  color: #e6f5f7;
+  font-size: 3.5rem;
+  font-family: "Roboto", sans-serif;
+}
+section.bottom div.cta {
+  height: 352px;
+  background: url(/images/bowls.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  padding-left: 16.67%;
+  padding-right: 16.67%;
+}
+section.bottom div.cta h2 {
+  padding-top: 8.6rem;
+  font-size: 5.5rem;
   color: white;
+}
+section.bottom div.cta h3 {
+  font-size: 2.1rem;
+  padding-top: 1.6rem;
+  color: white;
+}
+section.bottom div.cta div.btn {
+  padding-top: 5.4rem;
+}
+section.bottom div.cta div.btn a.btn {
+  background-color: #79ac49;
+  color: white;
+  padding: 1.2rem 3.4rem;
+  border-radius: 6px;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 2rem;
 }
 footer div.top {
   display: flex;
   justify-content: space-around;
   background-color: #f4f9ed;
+  height: 31.8rem;
+  padding-left: 7%;
+  padding-top: 8.8rem;
 }
 footer div.top div {
   display: flex;
   flex-direction: column;
   border-left: 1px solid gray;
-  padding: 3rem;
 }
 footer div.top div h2 {
   color: #7cb342;
@@ -365,7 +395,7 @@ footer div.top div:first-child {
 }
 footer div.bottom {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #e6f7fa;
   padding: 2rem 0rem;
   font-size: 0.8rem;
