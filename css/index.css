@@ -312,6 +312,7 @@ h3 {
   position: relative;
   color: white;
   font-size: 2rem;
+  max-width: 1440px;
 }
 .top-left {
   position: absolute;
@@ -368,4 +369,40 @@ footer div.bottom {
   background-color: #e6f7fa;
   padding: 2rem 0rem;
   font-size: 0.8rem;
+}
+h5 {
+  font-size: 2rem;
+  text-align: center;
+}
+.ui-devs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+.mike {
+  width: 30%;
+  height: 30%;
+}
+.dee {
+  width: 30%;
+  height: 30%;
+}
+.ux-devs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+.rob {
+  width: 30%;
+  height: 30%;
+}
+.karen {
+  width: 30%;
+  height: 30%;
+}
+.pm {
+  justify-content: center;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 1rem;
 }
