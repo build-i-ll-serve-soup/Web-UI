@@ -452,12 +452,11 @@ section.bottom div.cta div.btn a.btn {
 }
 footer div.top {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #f4f9ed;
   height: 31.8rem;
-  padding-left: 7%;
-  padding-top: 8.8rem;
-  font-size: 1.5rem;
+  padding-top: 4.1rem;
+  font-size: 1.6rem;
 }
 @media (max-width: 500px) {
   footer div.top {
@@ -466,19 +465,16 @@ footer div.top {
   }
 }
 footer div.top div {
+  width: 25.8rem;
   display: flex;
   flex-direction: column;
-  border-left: 1px solid gray;
+  border-left: 1px solid #daded3;
 }
 @media (max-width: 500px) {
   footer div.top div {
     border: 0;
     padding-bottom: 5rem;
   }
-}
-footer div.top div h2 {
-  color: #7cb342;
-  padding-bottom: 1rem;
 }
 footer div.top div a {
   text-decoration: none;
@@ -487,6 +483,32 @@ footer div.top div a {
 }
 footer div.top div:first-child {
   border: 0;
+  width: 29.4rem;
+  text-align: center;
+  padding-top: 4.8rem;
+}
+footer div.top div:first-child h2 {
+  color: #7cb342;
+  padding-bottom: 1rem;
+  font-size: 2.9rem;
+}
+footer div.top div:first-child a {
+  padding-bottom: 0.7rem;
+  font-size: 1.4rem;
+  padding-top: 0.3rem;
+}
+footer div.top div:not(:first-child) {
+  padding-left: 2.3rem;
+  padding-top: 3.3rem;
+}
+footer div.top div:not(:first-child) h2 {
+  color: #7cb342;
+  font-size: 2rem;
+  padding-bottom: 2.3rem;
+}
+footer div.top div:not(:first-child) a {
+  padding-bottom: 1.6rem;
+  padding-left: 1rem;
 }
 footer div.bottom {
   display: flex;

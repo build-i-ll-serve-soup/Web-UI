@@ -245,12 +245,11 @@ footer {
     }
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #f4f9ed;
     height: 31.8rem;
-    padding-left: 7%;
-    padding-top: 8.8rem;
-    font-size: 1.5rem;
+    padding-top: 4.1rem;
+    font-size: 1.6rem;
 
     div {
       @media @mobile {
@@ -258,14 +257,10 @@ footer {
         padding-bottom: 5rem;
       }
 
+      width: 25.8rem;
       display: flex;
       flex-direction: column;
-      border-left: 1px solid gray;
-
-      h2 {
-        color: #7cb342;
-        padding-bottom: 1rem;
-      }
+      border-left: 1px solid #daded3;
 
       a {
         text-decoration: none;
@@ -276,6 +271,37 @@ footer {
 
     div:first-child {
       border: 0;
+      width: 29.4rem;
+      text-align: center;
+      padding-top: 4.8rem;
+
+      h2 {
+        color: #7cb342;
+        padding-bottom: 1rem;
+        font-size: 2.9rem;
+      }
+
+      a {
+        padding-bottom: 0.7rem;
+        font-size: 1.4rem;
+        padding-top: 0.3rem;
+      }
+    }
+
+    div:not(:first-child) {
+      padding-left: 2.3rem;
+      padding-top: 3.3rem;
+
+      h2 {
+        color: #7cb342;
+        font-size: 2rem;
+        padding-bottom: 2.3rem;
+      }
+
+      a {
+        padding-bottom: 1.6rem;
+        padding-left: 1rem;
+      }
     }
   }
 
