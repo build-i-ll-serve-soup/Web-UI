@@ -167,6 +167,12 @@ header {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 header a {
   text-decoration: none;
   color: #666;
@@ -176,6 +182,12 @@ header nav.left {
   display: flex;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header nav.left {
+    order: 2;
+    padding-top: 0.7rem;
+  }
+}
 header nav.left span.middle_dot {
   margin: 0 0.9rem;
 }
@@ -183,6 +195,25 @@ header h1 a {
   color: #7cb342;
   font-size: 2.3rem;
   margin-left: -1.7%;
+}
+@media (max-width: 500px) {
+  header h1 a {
+    order: 1;
+  }
+}
+@media (max-width: 500px) {
+  header nav.right {
+    order: 3;
+    padding-top: 0.7rem;
+  }
+}
+header nav.right span.middle_dot {
+  display: none;
+}
+@media (max-width: 500px) {
+  header nav.right span.middle_dot {
+    display: inline;
+  }
 }
 header nav.right a:first-child {
   padding-right: 1.3rem;
@@ -193,6 +224,13 @@ header nav.right a.btn {
   padding: 1rem 1.8rem;
   border-radius: 6px;
   font-weight: 300;
+}
+@media (max-width: 500px) {
+  header nav.right a.btn {
+    border: 0;
+    color: #666;
+    font-weight: 400;
+  }
 }
 section.top div.cta {
   height: 512px;
@@ -243,6 +281,11 @@ section.top div.description {
   position: relative;
   z-index: 0;
 }
+@media (max-width: 500px) {
+  section.top div.description {
+    display: none;
+  }
+}
 section.top div.description div.text {
   display: flex;
   flex-direction: column;
@@ -262,9 +305,20 @@ section.middle div.description_1 {
   display: flex;
   padding: 0 15.9% 0 18.9%;
 }
+@media (max-width: 500px) {
+  section.middle div.description_1 {
+    flex-direction: column;
+    padding: 0 8% 0 8%;
+  }
+}
 section.middle div.description_1 div.text {
   padding-top: 13.6%;
   width: 35%;
+}
+@media (max-width: 500px) {
+  section.middle div.description_1 div.text {
+    width: 100%;
+  }
 }
 section.middle div.description_1 div.text h1 {
   font-size: 3.7rem;
@@ -279,20 +333,41 @@ section.middle div.description_1 div.overlaid_screens {
   padding-top: 4.7%;
   padding-left: 5.5%;
 }
+@media (max-width: 500px) {
+  section.middle div.description_1 div.overlaid_screens {
+    width: 100%;
+  }
+}
 section.middle div.description_2 {
   display: flex;
   padding-left: 18.9%;
   padding-right: 18.9%;
   margin-bottom: 2.7%;
 }
+@media (max-width: 500px) {
+  section.middle div.description_2 {
+    flex-direction: column;
+    padding: 0 8% 0 8%;
+  }
+}
 section.middle div.description_2 div.screen_with_logo_block {
   display: flex;
   flex-direction: column;
   width: 59%;
 }
+@media (max-width: 500px) {
+  section.middle div.description_2 div.screen_with_logo_block {
+    width: 100%;
+  }
+}
 section.middle div.description_2 div.screen_with_logo_block h4 {
   font-size: 2rem;
   margin-top: -3.2rem;
+}
+@media (max-width: 500px) {
+  section.middle div.description_2 div.screen_with_logo_block h4 {
+    margin-top: 8rem;
+  }
 }
 section.middle div.description_2 div.screen_with_logo_block span.subhead {
   color: #7cb342;
@@ -313,6 +388,11 @@ section.middle div.description_2 div.text {
   display: flex;
   flex-direction: column;
   width: 39%;
+}
+@media (max-width: 500px) {
+  section.middle div.description_2 div.text {
+    width: 100%;
+  }
 }
 section.middle div.description_2 div.text h4 {
   font-size: 3.3rem;
@@ -375,11 +455,24 @@ footer div.top {
   height: 31.8rem;
   padding-left: 7%;
   padding-top: 8.8rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  footer div.top {
+    flex-direction: column;
+    height: auto;
+  }
 }
 footer div.top div {
   display: flex;
   flex-direction: column;
   border-left: 1px solid gray;
+}
+@media (max-width: 500px) {
+  footer div.top div {
+    border: 0;
+    padding-bottom: 5rem;
+  }
 }
 footer div.top div h2 {
   color: #7cb342;
@@ -399,6 +492,12 @@ footer div.bottom {
   background-color: #e6f7fa;
   padding: 2rem 0rem;
   font-size: 0.8rem;
+}
+@media (max-width: 500px) {
+  footer div.bottom {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
 }
 h5 {
   font-size: 2rem;
