@@ -605,8 +605,15 @@ footer div.bottom {
   }
 }
 h5 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
+}
+h6 {
+  font-size: 2.5rem;
+}
+.github {
+  width: 25%;
+  height: 25%;
 }
 .ui-devs {
   display: flex;
