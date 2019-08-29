@@ -279,6 +279,7 @@ section.top div.cta a.btn {
   font-size: 1.9rem;
   margin-top: 5rem;
   width: 18rem;
+  text-align: center;
 }
 section.top div.description {
   display: flex;
